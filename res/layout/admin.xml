@@ -1,0 +1,271 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFAFA"
+    tools:context="com.example.project.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:id="@+id/Layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="39dp"
+        android:background="#ed4255" >
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="marquee"
+            android:gravity="center_horizontal"
+            android:paddingTop="6dp"
+            android:text="F I T"
+            android:textColor="#ffffffff"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="6dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/back"
+            android:drawablePadding="1dp"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:paddingLeft="1dp"
+            android:text="返回"
+            android:textColor="#ffffffff"
+            android:textSize="15dp" />
+
+        <ImageButton
+            android:id="@+id/editinf"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:paddingTop="1dp"
+            android:src="@drawable/edit2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Layout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" >
+
+        <!--
+             <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+        -->
+
+        <Button
+            android:id="@+id/watchdevice"
+            android:layout_width="180dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shapecir"
+            android:text="场馆设备"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/importnews"
+            android:layout_width="180dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="183dp"
+            android:layout_weight="1"
+            android:background="@drawable/shapecir"
+            android:text="发布比赛通知"
+            android:textColor="#ffffff" />
+        <!-- </LinearLayout> -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Content_Layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/Layout_bottom"
+        android:layout_below="@id/Layout_top"
+        android:gravity="center" >
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <ImageSwitcher
+                android:id="@+id/imageViewadmin"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp" >
+            </ImageSwitcher>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="245dp"
+                android:layout_marginTop="30dp"
+                android:stretchColumns="1" >
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="场馆名称"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/staddname"
+                        android:layout_width="240dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <View
+                    android:layout_height="3dip"
+                    android:background="#FF9090" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="开馆时间"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/staddtime"
+                        android:layout_width="240dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <View
+                    android:layout_height="3dip"
+                    android:background="#FF9090" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="服务价格"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/staddprice"
+                        android:layout_width="240dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <View
+                    android:layout_height="3dip"
+                    android:background="#FF9090" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="场馆地址"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/staddadress"
+                        android:layout_width="240dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <View
+                    android:layout_height="3dip"
+                    android:background="#FF9090" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="联系电话"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/staddtele"
+                        android:layout_width="240dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <View
+                    android:layout_height="3dip"
+                    android:background="#FF9090" />
+            </TableLayout>
+
+
+        </LinearLayout>
+            <TextView
+                android:layout_height="30dp"
+                android:layout_width="140dp"
+                android:layout_marginTop="410dp"
+                android:text="其他详细信息:"
+                android:textSize="20dp" />
+
+            <TextView 
+                android:id="@+id/staddother"
+                android:layout_width="400dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="440dp"
+                android:layout_height="80dp"
+                android:text=""
+                android:textSize="16dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

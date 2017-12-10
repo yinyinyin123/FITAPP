@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/real"
+    android:orientation="vertical"
+    android:background="#FFFAFA" >
+    <RelativeLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="100dp"
+       android:background="#ed4255">
+    <TextView
+       android:id="@+id/text_title"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:ellipsize="marquee"
+       android:gravity="center_horizontal"
+       android:paddingTop="9dp"
+       android:text="F I T"
+       android:textColor="#ffffffff"
+       android:textSize="18dp" />
+   <Button
+       android:id = "@+id/back"
+       android:layout_marginTop="6dp"
+       android:layout_width = "55dp"
+       android:layout_height = "30dp"
+       android:drawablePadding="1dp"
+       android:paddingLeft="1dp"
+       android:drawableLeft="@drawable/back"
+       android:gravity="center"
+       android:onClick="onClick"
+       android:text="返回"
+       android:textSize="15dp"
+       android:textColor="#ffffffff"
+       android:background="@android:color/transparent"
+       />  
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/rr"
+        android:background="#FFFAFA"
+        ></RelativeLayout>
+    <TextView
+        android:id="@+id/ttext"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="60dp"
+        android:textSize = "20dp"
+        android:textColor="#ffffffff"
+        android:text="Welcome!老哥" />
+
+     <View
+        android:id="@+id/user_ph"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/yinzhiboa" />
+     <Button
+         android:id="@+id/insert_agenga"
+         android:layout_width="fill_parent"
+         android:layout_height="40dp"
+         android:layout_marginTop="520dp"
+         android:text="新建计划"
+         android:textColor="#ed4255"
+         android:paddingLeft="10dp"
+         android:drawableLeft="@drawable/jahao"
+         android:drawablePadding="20dp"
+         android:gravity="center_vertical"
+         android:background="@drawable/shape"/>
+</RelativeLayout>

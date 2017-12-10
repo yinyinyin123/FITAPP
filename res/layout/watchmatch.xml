@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFFAFA">
+   <RelativeLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="39dp"
+       android:background="#ed4255">
+   <TextView
+       android:id="@+id/text_title"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:ellipsize="marquee"
+       android:gravity="center_horizontal"
+       android:paddingTop="6dp"
+       android:text="F I T"
+       android:textColor="#ffffffff"
+       android:textSize="20dp" />
+   <Button
+       android:id = "@+id/back"
+       android:layout_marginTop="6dp"
+       android:layout_width = "55dp"
+       android:layout_height = "30dp"
+       android:drawablePadding="1dp"
+       android:paddingLeft="1dp"
+       android:drawableLeft="@drawable/back"
+       android:gravity="center"
+       android:onClick="onClick"
+       android:text="返回"
+       android:textSize="15dp"
+       android:textColor="#ffffffff"
+       android:background="@android:color/transparent"
+       />  
+
+   </RelativeLayout> 
+   <TextView
+        android:id="@+id/sendmatch"
+        android:layout_width="150dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="60dp"
+        android:text="发布比赛信息"
+        android:textSize="23dp" />
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="510dp"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal" >
+	    <EditText
+	        android:id="@+id/matchname"
+	        android:layout_width="200dp"
+	        android:layout_height="40dp"
+	        android:layout_marginLeft="20dp"
+	        android:hint="比赛名称"
+	        android:paddingLeft="30dp"
+	        android:layout_marginTop="1dp"
+	        android:background="@drawable/shape"/>
+	    <Spinner
+	        android:id="@+id/matchtype"
+	        android:layout_width="70dp"
+	        android:layout_height="40dp"
+	        android:layout_marginTop="6dp"
+	        
+	        />
+	    
+   </LinearLayout>
+     
+	 <EditText 
+        android:id="@+id/host"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:hint="主办方"
+        android:paddingLeft="30dp"
+        android:background="@drawable/shape"/>
+
+ 
+    
+    <EditText 
+        android:id="@+id/matchadd"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        android:hint="地点"
+        android:paddingLeft="30dp"
+        android:background="@drawable/shape"/>
+    <EditText 
+        android:id="@+id/baoming"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="20dp"
+        android:hint="报名方式"
+        android:paddingLeft="30dp"
+        android:background="@drawable/shape"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="510dp"
+        android:layout_marginTop="290dp"
+        android:orientation="horizontal" >
+	       <TextView
+		     android:id="@+id/matchtime"
+		     android:layout_width="200dp"
+		     android:layout_height="50dp"
+		     android:layout_marginLeft="0dp"
+		     android:layout_marginTop="20dp"
+		     android:text="比赛时间:2017-12-12"
+		     android:textSize="17sp" /> 
+	    <Button
+        android:id="@+id/changetime1"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:text="修改"
+        android:layout_marginLeft="50dp"
+         android:layout_marginTop="20dp"
+        android:background="@drawable/login_shape"
+        android:textColor="#FFB6C1"/>
+    
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="510dp"
+        android:layout_marginTop="340dp"
+        android:orientation="horizontal" >
+	       <TextView
+		     android:id="@+id/jointime"
+		     android:layout_width="240dp"
+		     android:layout_height="50dp"
+		     android:layout_marginLeft="0dp"
+		     android:layout_marginTop="10dp"
+		     android:text="截止报名时间:2017-12-12"
+		     android:textSize="17sp" /> 
+	    <Button
+        android:id="@+id/changetime2"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:text="修改"
+        android:layout_marginLeft="10dp"
+         android:layout_marginTop="10dp"
+        android:background="@drawable/login_shape"
+        android:textColor="#FFB6C1"/>
+    
+    </LinearLayout>
+    <EditText
+	        android:id="@+id/matchinfo"
+	        android:layout_width="fill_parent"
+	        android:layout_height="90dp"
+	        android:hint="比赛详细信息"
+	        android:layout_marginTop="400dp"
+	        android:background="@drawable/shape"
+	        android:gravity="top" 
+	        />
+    <Button
+        android:id="@+id/send"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="发送"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/login_shape"
+        android:textColor="#FFB6C1"/>
+
+</RelativeLayout>

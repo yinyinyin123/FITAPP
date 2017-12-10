@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:background="#FFFAFA">
+    <RelativeLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="39dp"
+       android:background="#ed4255">
+
+   <TextView
+       android:id="@+id/text_title"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:ellipsize="marquee"
+       android:gravity="center_horizontal"
+       android:paddingTop="6dp"
+       android:text="F I T"
+       android:textColor="#ffffffff"
+       android:textSize="20dp" />
+   <Button
+       android:id = "@+id/back"
+       android:layout_marginTop="6dp"
+       android:layout_width = "55dp"
+       android:layout_height = "30dp"
+       android:drawablePadding="1dp"
+       android:paddingLeft="1dp"
+       android:drawableLeft="@drawable/back"
+       android:gravity="center"
+       android:onClick="onClick"
+       android:text="返回"
+       android:textSize="15dp"
+       android:textColor="#ffffffff"
+       android:background="@android:color/transparent"
+       />  
+   <ImageButton
+       android:id="@+id/myhome"
+       android:layout_width="30dp"
+       android:paddingTop="1dp"
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="10dp"
+       android:background="@android:color/transparent"
+       android:layout_height="35dp"
+       android:src="@drawable/user"/>
+   </RelativeLayout> 
+    <AutoCompleteTextView 
+        android:layout_width = "250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint = "搜索附近的健身房"
+        android:id = "@+id/autoComplete"
+        android:completionThreshold = "1"
+        android:singleLine="true"/>
+    <ImageButton
+        android:id = "@+id/search"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ss"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="265dp"
+        android:layout_marginTop="53dp"/>
+    
+
+</RelativeLayout>

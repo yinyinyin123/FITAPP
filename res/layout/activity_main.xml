@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.project.MainActivity" 
+    android:background="@color/darkgray">
+    
+   <RelativeLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="39dp"
+       android:background="#ed4255">
+
+   <TextView
+       android:id="@+id/text_title"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:ellipsize="marquee"
+       android:gravity="center_horizontal"
+       android:paddingTop="6dp"
+       android:text="F I T"
+       android:textColor="#ffffffff"
+       android:textSize="20dp" />
+   <Button
+       android:id = "@+id/back"
+       android:layout_marginTop="6dp"
+       android:layout_width = "55dp"
+       android:layout_height = "30dp"
+       android:drawablePadding="1dp"
+       android:paddingLeft="1dp"
+       android:drawableLeft="@drawable/back"
+       android:gravity="center"
+       android:onClick="onClick"
+       android:text="返回"
+       android:textSize="15dp"
+       android:textColor="#ffffffff"
+       android:background="@android:color/transparent"
+       />  
+   <ImageButton
+       android:id="@+id/myhome"
+       android:layout_width="30dp"
+       android:paddingTop="1dp"
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="10dp"
+       android:background="@android:color/transparent"
+       android:layout_height="35dp"
+       android:src="@drawable/user"/>
+   </RelativeLayout> 
+    
+   <LinearLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="600dp" 
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+     <ImageSwitcher
+        android:id="@+id/imageSwitcher1"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+         >
+    </ImageSwitcher> 
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+        <Button 
+            android:id="@+id/match"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:drawableLeft="@drawable/match"
+            android:text="比赛通知"
+            android:textSize="17dp"
+            android:layout_marginTop="1dp"
+            android:paddingRight="10dp"
+            android:layout_width="fill_parent" 
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/next"
+            android:background="@drawable/shapecircle" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/swim"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:drawableLeft="@drawable/swim"
+            android:paddingRight="10dp"
+            android:text="游泳"
+            android:textSize="17dp"
+            android:layout_width="fill_parent" 
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/next"
+            android:background="@drawable/shapecircle"/>
+            
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/basketball"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="篮球"
+            android:drawableLeft="@drawable/basketball"
+            android:layout_marginTop="1dp"
+            android:paddingRight="10dp"
+            android:textSize="17dp"
+            android:layout_width="fill_parent" 
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/next"
+            android:background="@drawable/shapecircle"/> 
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/badminton"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dp"
+            android:drawableLeft="@drawable/badminton"
+            android:text="羽毛球"
+            android:layout_marginTop="1dp"
+            android:paddingBottom="1dip"
+            android:textSize="17dp"
+            android:layout_width="fill_parent" 
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/next"
+            android:background="@drawable/shapecircle"/> 
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/tennis"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:drawableLeft="@drawable/match"
+            android:text="网球"
+            android:layout_marginTop="1dp"
+            android:paddingRight="10dp"
+            android:textSize="17dp"
+            android:layout_width="fill_parent" 
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/next"
+            android:background="@drawable/shapecircle"/> 
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/fit"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="健身"
+            android:drawableLeft="@drawable/basketball"
+            android:layout_marginTop="1dp"
+            android:paddingRight="10dp"
+            android:textSize="17dp"
+            android:layout_width="fill_parent" 
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/next"
+            android:background="@drawable/shapecircle"/> 
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/outdoor"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="校外"
+            android:drawableLeft="@drawable/basketball"
+            android:layout_marginTop="1dp"
+            android:paddingRight="10dp"
+            android:textSize="17dp"
+            android:layout_width="fill_parent" 
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/next"
+            android:background="@drawable/shapecircle"/> 
+    </LinearLayout> 
+    </LinearLayout>
+     
+
+
+    
+    
+  
+
+</RelativeLayout>

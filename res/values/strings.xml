@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FIT</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="lan">篮球</string>
+    <string name="yu">羽毛球</string>
+    <string name="tian">田径</string>
+    <string name="wang">网球</string>
+    <string name="zu">足球</string>
+
+</resources>
